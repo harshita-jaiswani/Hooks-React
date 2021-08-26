@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import IncNum from "./IncNum";
+import GetTime from "./GetTime";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+function App()
+{
+    return(
+        <>
+    <IncNum></IncNum> 
+    <h3>On clicking the button the number will increase by 1.</h3>
+    <GetTime />
+    <h3>On clicking the button you will get the current time.</h3>
+
+        </>
+    )
 }
 
 export default App;
